@@ -13,6 +13,7 @@ group by st.store_id;
 
 /*3. Which film categories are longest?
 */
+
 select ca.category_id,  f.length from sakila.film as f
 left join sakila.category as ca on ca.last_update = f.last_update
 order by length desc;
